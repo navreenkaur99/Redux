@@ -1,4 +1,4 @@
-// Todos.js
+
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeTodo } from '../Feature/todo/todoSlice';
@@ -9,13 +9,19 @@ function Todos() {
 
     return (
         <>
-            <div>Todos</div>
-            {todos && todos.map((todo) => (
+            <h3>Todos</h3>
+            <div className='card'>
+                <div className="cardbody">
+                              
+                                {todos && todos.map((todo) => (
                 <li key={todo.id}>
                     {todo.text}
                     <button onClick={() => dispatch(removeTodo(todo.id))}>Delete</button>
                 </li>
             ))}
+            </div>
+
+            </div>
         </>
     );
 }
@@ -23,26 +29,3 @@ function Todos() {
 export default Todos;
 
 
-
-// import React from 'react'
-// import { useSelector, useDispatch } from 'react-redux'
-// import { removeTodo } from '../Feature/todo/todoSlice'
-
-// function Todos() {
-//     const todos = useSelector(state => state.todos)
-//     const dispatch = useDispatch()
-//   return (
-//     <>
-//     <div>Todos</div>
-//     { todos && todos.map((todo)=> (
-//         <li key ={todo.id}>
-//             {todo.text}
-//             <button onClick={ () => dispatch(removeTodo(todo.id))}>Delete</button>
-//         </li>
-        
-//     ))}
-//     </>
-//   )
-// }
-
-// export default Todos

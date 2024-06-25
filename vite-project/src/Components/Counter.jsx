@@ -7,10 +7,16 @@ const App = ({ count, increment, decrement }) => {
 
   return (
     <div>
+         <div className='card'>
+                <div className="cardbody">
+         
       <h1>Count: {count}</h1>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
     </div>
+    </div>
+    </div>
+
   );
 };
 

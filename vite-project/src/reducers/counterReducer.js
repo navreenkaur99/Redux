@@ -1,4 +1,4 @@
-// src/reducers/counterReducer.js
+
 
 import { INCREMENT, DECREMENT } from '../actions';
 
@@ -25,30 +25,3 @@ const counterReducer = (state = initialState, action) => {
 
 export default counterReducer;
 
-
-
-// // src/reducers/counterReducer.js
-// import { INCREMENT, DECREMENT } from '../actions';
-
-// const initialState = {
-//   count: 0 // Initial state for count
-// };
-
-// const counterReducer = (state = initialState, action) => {
-//   switch (action.type) {
-//     case INCREMENT:
-//       return {
-//         ...state,
-//         count: state.count + 1
-//       };
-//     case DECREMENT:
-//       return {
-//         ...state,
-//         count: state.count - 1
-//       };
-//     default:
-//       return state;
-//   }
-// };
-
-// export default counterReducer.reducer

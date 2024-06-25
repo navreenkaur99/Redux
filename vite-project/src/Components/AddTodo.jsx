@@ -14,6 +14,7 @@ function AddTodo() {
     
   };
   return (
+    <>    <h1> TO DO LIST</h1>
     <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
       <input
         type="text"
@@ -28,6 +29,8 @@ function AddTodo() {
         Add Todo
       </button>
     </form>
+    </>
+
   );
 }
 
